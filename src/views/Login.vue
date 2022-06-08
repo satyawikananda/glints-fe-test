@@ -9,10 +9,10 @@ const authStore = useAuth()
 const onSubmit = async () => {
   try {
     const data = await authStore.login(identifier.value as string, password.value as string)
-    return console.log(data)
+    console.log(data)
   }
   catch (err) {
-    return console.log(err)
+    console.log(err)
   }
 }
 </script>

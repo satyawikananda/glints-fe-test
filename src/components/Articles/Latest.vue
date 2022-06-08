@@ -7,7 +7,6 @@ const props = defineProps<{
   title: string
   description: string
   to: string
-//   toTags: string
 }>()
 </script>
 
@@ -26,7 +25,6 @@ const props = defineProps<{
       <p class="text-sm font-light mb-5 text-elucidator-700 dark:text-elucidator-50">
         {{ $props.description }}
       </p>
-      <!-- <Tag :tags="$props.tags" class="mb-5 flex flex-row justify-start" /> -->
     </div>
   </router-link>
 </template>

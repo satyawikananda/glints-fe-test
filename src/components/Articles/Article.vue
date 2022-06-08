@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-
 const props = defineProps<{
   image: string
   alt: string
@@ -12,15 +10,6 @@ const props = defineProps<{
   likeCount: number
   shareCount: number
 }>()
-
-// const tags = computed(() => {
-//   const tagName: string[] = []
-//   props.tags.map(tag => tagName.push(tag))
-
-//   return tagName
-// })
-
-console.log(props.tags)
 </script>
 
 <template>

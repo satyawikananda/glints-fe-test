@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { useAuth } from '@/stores/auth'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,17 +24,6 @@ const router = createRouter({
       return savedPosition
     else return { top: 0, behavior: 'smooth' }
   },
-})
-
-router.beforeEach(async (to) => {
-  const publicPages = ['/login']
-  const authRequired = !publicPages.includes(to.path)
-  const auth = useAuth()
-
-  if (authRequired && !auth.user) {
-    auth.returnUrl = to.fullPath
-    return '/login'
-  }
 })
 
 export default router
