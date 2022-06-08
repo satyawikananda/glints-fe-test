@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("./components/_scrollbar.scss");
+@import url("./components/_nprogress.scss");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html.dark {
+  @apply bg-elucidator-900;
+}
+a {
+  @apply cursor-pointer;
+}
+.article-content {
+  p {
+    @apply mb-2 mt-2
+  }
+  figure {
+    margin: 0 auto;
+  }
+  figure img {
+    @apply flex flex-wrap justify-center rounded w-xs h-xs mx-auto;
+  }
+}
