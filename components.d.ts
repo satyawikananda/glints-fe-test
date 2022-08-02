@@ -6,23 +6,12 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Article: typeof import('./src/components/Articles/Article.vue')['default']
-    CarbonBackToTop: typeof import('~icons/carbon/back-to-top')['default']
-    CarbonCalendar: typeof import('~icons/carbon/calendar')['default']
-    CarbonHome: typeof import('~icons/carbon/home')['default']
-    CarbonMenu: typeof import('~icons/carbon/menu')['default']
-    CarbonSearch: typeof import('~icons/carbon/search')['default']
-    CarbonTableOfContents: typeof import('~icons/carbon/table-of-contents')['default']
-    CarbonThumbsUpFilled: typeof import('~icons/carbon/thumbs-up-filled')['default']
-    IcBaselineRemoveRedEye: typeof import('~icons/ic/baseline-remove-red-eye')['default']
-    IonMdShare: typeof import('~icons/ion/md-share')['default']
     Latest: typeof import('./src/components/Articles/Latest.vue')['default']
     Navbar: typeof import('./src/components/Navbar/Navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Tag: typeof import('./src/components/button/Tag.vue')['default']
     ToTopBtn: typeof import('./src/components/button/ToTopBtn.vue')['default']
-    UilDocumentLayoutCenter: typeof import('~icons/uil/document-layout-center')['default']
-    UilGithub: typeof import('~icons/uil/github')['default']
   }
 }
 

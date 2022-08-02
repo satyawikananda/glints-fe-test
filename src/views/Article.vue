@@ -70,7 +70,7 @@ onMounted(() => {
         }}</span>
       </div>
     </div>
-    <!-- <Tag :tags="frontmatter.tags" class="mb-5 flex flex-row justify-center" /> -->
+    <Tag :tags="frontmatter.tags" class="mb-5 flex flex-row justify-center" />
     <img
       :src="detail?.img"
       alt="thumbnail-dsds" class="w-full h-md object-cover rounded-md shadow-lg" loading="lazy"
